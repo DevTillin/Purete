@@ -1,23 +1,31 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-<meta charset="UTF-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1" />
-<title>Alfredo gira gira</title>
+    <link rel="stylesheet" href="fonts.css">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Alfredo gira gira</title>
 <style>
+    h1{
+        font-family: Edu;
+        text-align: center;
+        color: white;
+        margin-bottom: 100px;
+    }
   body {
     display: flex;
+    flex-direction: column;   /* ahora en columna */
     justify-content: center;
     align-items: center;
     height: 100vh;
     margin: 0;
     background-image: url("https://scontent.fasu11-1.fna.fbcdn.net/v/t39.30808-6/484212953_1048604597291593_8462307051822587573_n.jpg?_nc_cat=104&ccb=1-7&_nc_sid=833d8c&_nc_ohc=IvYWVKAsE38Q7kNvwGdKFZ6&_nc_oc=AdmHHEK4mC0LwP4KqsRIG9bkSndZ9QkdE4Co4JL-osB6Ym1UgZKCHy0TZWR6LngPBUE65CqW7ED4SkVycu7kdOs4&_nc_zt=23&_nc_ht=scontent.fasu11-1.fna&_nc_gid=YW5c3usLjMQ65buPvTjXUw&oh=00_AfXWfjrkrR4r3wNTjpLdP9uJhzzfjlk33rbXEv0imi4OtQ&oe=68ADBEDE");
-    background-size: cover;         /* Ajusta la imagen para cubrir toda la pantalla */
-    background-repeat: no-repeat;   /* Evita que la imagen se repita */
-    background-position: center;    /* Centra la imagen */
+    background-size: cover;         
+    background-repeat: no-repeat;   
+    background-position: center;    
   }
   .animacion {
-    width: 300px; /* tamaño inicial */
+    width: 300px; 
     animation: girarEscalar 4s linear infinite;
   }
   @keyframes girarEscalar {
@@ -34,11 +42,14 @@
 </style>
 </head>
 <body>
-  <img
-    class="animacion"
-    src="https://i.ibb.co/v4LmHp4S/alfredo.jpg"
-    alt="Imagen giratoria y escalable"
-  />
+    <h1>Cliquea la imagen para volver</h1>
+    <a href="index.html">
+        <img
+        class="animacion"
+        src="https://i.ibb.co/v4LmHp4S/alfredo.jpg"
+        alt="Imagen giratoria y escalable"
+        title="Cliquea para volver"
+        />
+    </a>
 </body>
 </html>
-
