@@ -1,0 +1,9 @@
+@font-face {
+    font-family: "Playwrite";
+    src: url("carpeta/PlaywriteMXGuides-Regular.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "Edu";
+    src: url("edustatic/EduNSWACTCursive-Regular.ttf") format("truetype");
+}
