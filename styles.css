@@ -1,62 +1,126 @@
-
+/* Fondo con overlay oscuro para mejorar contraste */
 body {
     margin: 0;
     padding: 0;
-    height: 100vh;
+    min-height: 100vh;
     background-image: url("sanblas1.jpg");
-    background-size: cover;         /* Ajusta la imagen para cubrir toda la pantalla */
-    background-repeat: no-repeat;   /* Evita que la imagen se repita */
-    background-position: center;    /* Centra la imagen */
-}
-
-h2{
-    color: white;
-    text-align: center;
-    font-family: Edu;
-    font-size: 50px;
-    margin-bottom:15px ;
-}
-
-h1{
-    color: rgb(245, 245, 245);
-    text-align: center;
-    text-shadow: 2px 2px 4px rgb(78, 78, 80);
-    font-family: 'Edu';
-    font-size: 50px;
-}
-
-p{
-    color: rgb(233, 236, 178);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    font-size: 20px;
-    font-weight: bolder;
-    font-style: italic;
+}
+
+.overlay {
+    background: rgba(0, 0, 0, 0.5); /* Oscurece el fondo para mejor legibilidad */
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    box-sizing: border-box;
     text-align: center;
+}
+
+h1 {
+    color: #f5f5f5;
+    font-family: 'Edu', sans-serif;
+    font-size: 60px;
+    text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.7);
+    margin: 10px 0;
+}
+
+h2 {
+    color: #ffffff;
+    font-family: 'Edu', sans-serif;
+    font-size: 45px;
+    text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.5);
+    margin: 20px 0 10px;
+}
+
+p {
+    color: #e9ecb2;
+    font-size: 20px;
+    font-weight: bold;
+    font-style: italic;
     line-height: 1.5;
     letter-spacing: 1px;
-    text-transform: lowercase;
-    text-shadow: 2px 2px 4px rgb(0, 0, 0);
-    text-transform: capitalize;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.7);
     margin-bottom: 15px;
 }
+
 .centrarxd {
-    text-align: center; /* Opcional, para centrar verticalmente */
+    margin: 20px 0;
 }
+
 .textoclickeable {
-    color: rgb(233, 236, 178);
-    text-align: center;
-    text-decoration: none;
-    font-size: 40px;
+    display: inline-block;
+    background: rgba(255, 255, 255, 0.1);
+    padding: 15px 30px;
+    color: #e9ecb2;
+    font-size: 36px;
     font-family: Georgia, 'Times New Roman', Times, serif;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    text-decoration: none;
+    border-radius: 12px;
+    transition: all 0.3s ease;
+    box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.5);
+}
+
+.textoclickeable:hover {
+    background: rgba(255, 255, 255, 0.3);
+    transform: scale(1.05);
+}
+
+.hola123 {
+    color: #ffffff;
+    font-family: 'Edu', sans-serif;
+    font-size: 40px;
     margin-bottom: 15px;
 }
-.hola123{
-    color: white;
-    text-align: center;
-    font-family: Edu;
-    font-size: 50px;
-    margin-bottom:15px ;
+
+/* ------------------- Media Queries para móviles ------------------- */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 40px;
+    }
+
+    h2 {
+        font-size: 30px;
+    }
+
+    p {
+        font-size: 16px;
+    }
+
+    .textoclickeable {
+        font-size: 24px;
+        padding: 12px 20px;
+    }
+
+    .hola123 {
+        font-size: 28px;
+    }
 }
 
+@media (max-width: 480px) {
+    h1 {
+        font-size: 32px;
+    }
 
+    h2 {
+        font-size: 24px;
+    }
+
+    p {
+        font-size: 14px;
+    }
+
+    .textoclickeable {
+        font-size: 20px;
+        padding: 10px 16px;
+    }
+
+    .hola123 {
+        font-size: 22px;
+    }
+}
